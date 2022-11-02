@@ -7,7 +7,8 @@ public partial class App : Application
 		InitializeComponent();
 		var navPage = new NavigationPage(new MainPage());
 		navPage.Background = Colors.Green;
-        //MainPage = new NavigationPage(new MainPage());
-        MainPage = new FlyoutPageDemo();
+		//MainPage = new NavigationPage(new MainPage());
+		//MainPage = new FlyoutPageDemo();
+		MainPage = new TabbedPageDemo();
     }
 }

@@ -6,6 +6,7 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new StackLayoutDemo();
+		//MainPage = new StackLayoutDemo();
+		MainPage = new HorizontalStackLayoutDemo();
 	}
 }

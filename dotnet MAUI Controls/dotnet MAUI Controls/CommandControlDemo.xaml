@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dotnet_MAUI_Controls.CommandControlDemo"
+             Title="CommandControlDemo">
+    <VerticalStackLayout>
+        <Button x:Name="btnTest"
+                Text="Click Me!"
+                Clicked="btnTest_Clicked"/>
+        <ImageButton Source="dotnet_bot.svg"
+                     Clicked="btnTest_Clicked"/>
+        <RadioButton CheckedChanged="RadioButton_CheckedChanged"
+                     Content="Option 1" 
+                     GroupName="grp1" IsChecked="True"/>
+        <RadioButton CheckedChanged="RadioButton_CheckedChanged"
+                     Content="Option 2"
+                     GroupName="grp1"/>
+        <RadioButton CheckedChanged="RadioButton_CheckedChanged"
+                     Content="Option 3"
+                     GroupName="grp2"/>
+        <RadioButton CheckedChanged="RadioButton_CheckedChanged"
+                     Content="Option 4"
+                     GroupName="grp2"/>
+        <SearchBar x:Name="searchControl" SearchButtonPressed="searchControl_SearchButtonPressed"
+                   Placeholder="Inter some text"/>
+        <SwipeView>
+            <SwipeView.LeftItems>
+                <SwipeItems>
+                    <SwipeItem BackgroundColor="Gray"
+                               IconImageSource="dotnet_bot.svg"
+                               Invoked="SwipeItem_Invoked"
+                               Text="Favories"/>
+                    <SwipeItem BackgroundColor="Purple"
+                               Text="Delete"
+                               Invoked="SwipeItem_Invoked"
+                               IconImageSource="dotnet_bot.svg"/>
+                </SwipeItems>
+            </SwipeView.LeftItems>
+            <SwipeView.RightItems>
+                <SwipeItems>
+                    <SwipeItem BackgroundColor="Gray"
+                               IconImageSource="dotnet_bot.svg"
+                               Invoked="SwipeItem_Invoked"
+                               Text="Favories"/>
+                    <SwipeItem BackgroundColor="Purple"
+                               Text="Delete"
+                               Invoked="SwipeItem_Invoked"
+                               IconImageSource="dotnet_bot.svg"/>
+                </SwipeItems>
+            </SwipeView.RightItems>
+            <Grid BackgroundColor="Azure"
+                  HeightRequest="60"
+                  WidthRequest="300">
+                <Label HorizontalOptions="Center"
+                       Text="Swipe Right"
+                       VerticalOptions="Center"/>
+            </Grid>
+        </SwipeView>
+    </VerticalStackLayout>
+</ContentPage>

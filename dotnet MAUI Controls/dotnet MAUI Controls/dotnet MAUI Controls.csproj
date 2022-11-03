@@ -49,6 +49,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="CommandControlDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ControlToPresentData.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

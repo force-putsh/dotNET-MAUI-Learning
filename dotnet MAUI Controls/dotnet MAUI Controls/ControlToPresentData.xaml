@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dotnet_MAUI_Controls.ControlToPresentData"
+             Title="ControlToPresentData">
+    <ScrollView>
+        <VerticalStackLayout>
+            <BoxView BackgroundColor="Gray"
+                     HeightRequest="700"/>
+            <Label Text="Xamarin" TextColor="Blue"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="Gray"/>
+            <Ellipse Fill="yellow"
+                     Stroke="Red"
+                     StrokeThickness="10"
+                     HeightRequest="200"
+                     HorizontalOptions="Center"
+                     WidthRequest="200"
+                     BackgroundColor="Blue"/>
+            <Line Stroke="Black"
+                  X1="0"
+                  Y1="0"
+                  X2="100"
+                  Y2="50"
+                  StrokeThickness="20"
+                  StrokeLineCap="Round"
+                  HorizontalOptions="Center"/>
+            <Rectangle Fill="green"
+                       Stroke="black"
+                       StrokeThickness="10"
+                       HeightRequest="50"
+                       WidthRequest="300"
+                       HorizontalOptions="End"
+                       RadiusX="10"
+                       RadiusY="10"/>
+            <Polygon Fill="black"
+                     Points="0,100 100,90 40,50"
+                     Stroke="Red"
+                     StrokeThickness="5"
+                     StrokeDashArray="1,1"
+                     StrokeDashOffset="2"
+                     HorizontalOptions="Center"/>
+            <Path Aspect="Uniform"
+                  Data="M 10,100 L 100,100 100,50Z"
+                  Stroke="black"
+                  HorizontalOptions="Center"/>
+            <Border Stroke="Black"
+                    StrokeThickness="4"
+                    Margin="20"
+                    Padding="16,8"
+                    BackgroundColor="Purple"
+                    HorizontalOptions="Center">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="40,0,0,40"/>
+                </Border.StrokeShape>
+                <Label Text="Welcome To Victor App"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"/>
+            </Border>
+            <Frame Margin="5"
+                   BackgroundColor="Azure"
+                   Padding="10">
+                <Image Source="dotnet_bot.png"
+                   Aspect="Center"/>
+            </Frame>
+            <ScrollView>
+                <WebView HeightRequest="3000"
+                     Source="https://github.com/vngounou26"/>
+            </ScrollView>
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

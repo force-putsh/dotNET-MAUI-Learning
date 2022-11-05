@@ -6,8 +6,9 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		//MainPage = new AppShell();
-		//MainPage = new ControlToPresentData();
-		MainPage = new CommandControlDemo();
+        //MainPage = new AppShell();
+        //MainPage = new ControlToPresentData();
+        //MainPage = new CommandControlDemo();
+        MainPage = new InputControlDemo();
     }
 }

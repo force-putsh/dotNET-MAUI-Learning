@@ -2,23 +2,27 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
 	public MainPage()
 	{
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	private void sldRed_ValueChanged(object sender, ValueChangedEventArgs e)
 	{
-		count++;
+		var red = sldRed.Value;
+		var green = sldGreen.Value;
+		var blue = sldBlue.Value;
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+		Color color = Color.FromRgb(red, green, blue);
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		setColor(color);
+    }
+
+	private void setColor(Color color)
+	{
+		btnRandom.BackgroundColor = color;
+		Container.BackgroundColor = color;
+		lblHex.Text = color.ToHex();
 	}
 }
 

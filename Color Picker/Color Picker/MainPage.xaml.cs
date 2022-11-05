@@ -1,4 +1,6 @@
-﻿namespace Color_Picker;
+﻿using CommunityToolkit.Maui.Alerts;
+
+namespace Color_Picker;
 
 public partial class MainPage : ContentPage
 {
@@ -39,5 +41,12 @@ public partial class MainPage : ContentPage
 		sldBlue.Value = color.Blue;
         isRandom = false;
 	}
+
+	private async void ImageButton_Clicked(object sender, EventArgs e)
+	{
+        await Clipboard.SetTextAsync(lblHex.Text);
+		var toast = Toast.Make("Color copied", CommunityToolkit.Maui.Core.ToastDuration.Short, 12);
+        await toast.Show();
+    }
 }
 

@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Perfect_Pay.MainPage">
+             x:Class="Perfect_Pay.MainPage"
+             BackgroundColor="Black">
     <ContentPage.Resources>
         <Color x:Key="SectionColor">#444444</Color>
         <Color x:Key="LightFont">#d6d6d6</Color>
         <Color x:Key="DarkFont">#4fd8eb</Color>
     </ContentPage.Resources>
-    <Grid RowDefinitions=".3*,.7*" Margin="15">
+    <Grid RowDefinitions=".3*,.7*" 
+          Margin="15">
         <Frame Padding="10"
                BackgroundColor="{StaticResource SectionColor}"
                BorderColor="Transparent">
@@ -51,6 +53,72 @@
                 </VerticalStackLayout>
             </Grid>
         </Frame>
+
+        <Grid Grid.Row="1"
+              Margin="0,15,0,0"
+              ColumnDefinitions=".3*,.7*"
+              RowDefinitions="*,*,*,*">
+            <Label Text="Enter your Bill: $"
+                   TextColor="{StaticResource LightFont}"
+                   VerticalOptions="Center"/>
+            <Entry x:Name="txtBill"
+                   Grid.Column="1"
+                   BackgroundColor="{StaticResource SectionColor}"
+                   Keyboard="Numeric"
+                   Text="0.0"
+                   TextColor="{StaticResource LightFont}"
+                   VerticalOptions="Center"/>
+            <Label Grid.Row="1"
+                   Text="Choose your tip"
+                   TextColor="{StaticResource LightFont}"
+                   VerticalOptions="Center"/>
+            <HorizontalStackLayout Grid.Row="1"
+                                   Grid.Column="1"
+                                   HeightRequest="70"
+                                   HorizontalOptions="CenterAndExpand"
+                                   Spacing="10">
+                <Button Text="10%" WidthRequest="70"/>
+                <Button Text="15%" WidthRequest="70"/>
+                <Button Text="20%" WidthRequest="70"/>
+            </HorizontalStackLayout>
+            <Label x:Name="lblTip"
+                   Grid.Row="2"
+                   Text="Tip: O%"
+                   TextColor="{StaticResource LightFont}"
+                   VerticalOptions="Center"/>
+            <Slider x:Name="sltTip"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Maximum="50"
+                    Minimum="0"/>
+            <Label Grid.Row="3"
+                   Text="Split the total"
+                   TextColor="{StaticResource LightFont}"
+                   VerticalOptions="Center"/>
+            <HorizontalStackLayout Grid.Row="3"
+                                   Grid.Column="1"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center">
+                <Button x:Name="btnMinus"
+                        Text="-"
+                        WidthRequest="70"/>
+                <Label x:Name="lblNoPersons"
+                       Margin="-5,0,-5,0"
+                       Text="1"
+                       BackgroundColor="{StaticResource SectionColor}"
+                       FontSize="25"
+                       HeightRequest="50"
+                       HorizontalTextAlignment="Center"
+                       HorizontalOptions="Center"
+                       TextColor="{StaticResource LightFont}"
+                       VerticalOptions="Center"
+                       VerticalTextAlignment="Center"
+                       WidthRequest="100"/>
+                <Button x:Name="btnPlus"
+                        Text="+"
+                        WidthRequest="70"/>
+            </HorizontalStackLayout>
+        </Grid>
     </Grid>
 
 </ContentPage>

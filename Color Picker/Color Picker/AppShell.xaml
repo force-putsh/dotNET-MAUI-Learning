@@ -7,7 +7,7 @@
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
-        Title="Home"
+        Title="Color Picker"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

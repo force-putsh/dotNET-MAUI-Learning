@@ -18,7 +18,7 @@
                  Minimum="1"
                  Increment="1"/>
         <Switch IsToggled="True"/>
-        <DatePicker/>
-        <TimePicker/>
+        <DatePicker />
+        <TimePicker />
     </VerticalStackLayout>
 </ContentPage>

@@ -55,6 +55,9 @@
 	  <MauiXaml Update="ControlToPresentData.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="EditTextControlsDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="InputControlDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

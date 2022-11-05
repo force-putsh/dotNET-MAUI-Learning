@@ -9,6 +9,7 @@ public partial class App : Application
         //MainPage = new AppShell();
         //MainPage = new ControlToPresentData();
         //MainPage = new CommandControlDemo();
-        MainPage = new InputControlDemo();
+        //MainPage = new InputControlDemo();
+        MainPage = new EditTextControlsDemo();
     }
 }

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31611.283
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet MAUI Controls", "..\dotnet MAUI Controls\dotnet MAUI Controls.csproj", "{6F5136D7-EAB6-47C4-8260-F1B8D0A88244}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet MAUI Layouts", "..\dotnet MAUI Layouts\dotnet MAUI Layouts.csproj", "{EF57A5D3-540B-4211-8761-EAC0AA2E7A45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet MAUI Pages", "..\dotnet MAUI Pages\dotnet MAUI Pages.csproj", "{12E1F89C-D1E5-4933-BED7-A9D8A17920D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task App", "..\Task App\Task App.csproj", "{FA7590F2-DE63-4F0F-BD9F-7A6EAF723A4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client Rest in .net MAUI", "Client Rest in .net MAUI\Client Rest in .net MAUI.csproj", "{F43B4376-127B-4626-973B-23501634A0F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F5136D7-EAB6-47C4-8260-F1B8D0A88244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F5136D7-EAB6-47C4-8260-F1B8D0A88244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F5136D7-EAB6-47C4-8260-F1B8D0A88244}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6F5136D7-EAB6-47C4-8260-F1B8D0A88244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F5136D7-EAB6-47C4-8260-F1B8D0A88244}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F5136D7-EAB6-47C4-8260-F1B8D0A88244}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EF57A5D3-540B-4211-8761-EAC0AA2E7A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF57A5D3-540B-4211-8761-EAC0AA2E7A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF57A5D3-540B-4211-8761-EAC0AA2E7A45}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EF57A5D3-540B-4211-8761-EAC0AA2E7A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF57A5D3-540B-4211-8761-EAC0AA2E7A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF57A5D3-540B-4211-8761-EAC0AA2E7A45}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{12E1F89C-D1E5-4933-BED7-A9D8A17920D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E1F89C-D1E5-4933-BED7-A9D8A17920D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E1F89C-D1E5-4933-BED7-A9D8A17920D4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{12E1F89C-D1E5-4933-BED7-A9D8A17920D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E1F89C-D1E5-4933-BED7-A9D8A17920D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E1F89C-D1E5-4933-BED7-A9D8A17920D4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FA7590F2-DE63-4F0F-BD9F-7A6EAF723A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA7590F2-DE63-4F0F-BD9F-7A6EAF723A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA7590F2-DE63-4F0F-BD9F-7A6EAF723A4E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FA7590F2-DE63-4F0F-BD9F-7A6EAF723A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA7590F2-DE63-4F0F-BD9F-7A6EAF723A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA7590F2-DE63-4F0F-BD9F-7A6EAF723A4E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F43B4376-127B-4626-973B-23501634A0F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43B4376-127B-4626-973B-23501634A0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43B4376-127B-4626-973B-23501634A0F4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F43B4376-127B-4626-973B-23501634A0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43B4376-127B-4626-973B-23501634A0F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43B4376-127B-4626-973B-23501634A0F4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+	EndGlobalSection
+EndGlobal

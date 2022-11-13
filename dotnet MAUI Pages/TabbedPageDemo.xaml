@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dotnet_MAUI_Pages.TabbedPageDemo"
+             Title="TabbedPageDemo">
+    <ContentPage Title="Page1" IconImageSource="dotnet_bot.svg" BackgroundColor="Yellow">
+        <Grid RowDefinitions=".9*,.1*">
+            <Label Text="Clicker" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="Red" Grid.Row="0"/>
+            <Button Text="click" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="1" x:Name="btnOK" Clicked="btnOK_Clicked"/>
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="Page2"></ContentPage>
+    <ContentPage Title="Page3"></ContentPage>
+</TabbedPage>

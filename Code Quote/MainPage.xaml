@@ -3,39 +3,45 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Code_Quote.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <Grid x:Name="container">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,1">
+                <GradientStopCollection>
+                    <GradientStop Offset="0" Color="#051937"/>
+                    <GradientStop Offset="0.25" Color="#004d7a"/>
+                    <GradientStop Offset="0.50" Color="#008793"/>
+                    <GradientStop Offset="0.75" Color="#00bf72"/>
+                    <GradientStop Offset="1" Color="#a8eb12"/>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid Margin="25" RowDefinitions=".7*,.1*,.2*">
+            <ScrollView>
+                <Label FontSize="50"
+                   x:Name="lblQuote"
+                   HorizontalTextAlignment="Center"
+                   Text="Code Quote"
+                   TextColor="White"
+                   FontFamily="MyFont"
+                   VerticalOptions="Center"/>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
-    </ScrollView>
+            </ScrollView>
+            <Label FontSize="20"
+                   x:Name="lblAuthor"
+                   Grid.Row="1"
+                   HorizontalTextAlignment="Center"
+                   Text="Author"
+                   TextColor="White"
+                   FontFamily="MyFont"
+                   VerticalOptions="Center"/>
+            <Button Text="Get Quote"
+                    Grid.Row="2"
+                    BackgroundColor="Black"
+                    Opacity=".4"
+                    x:Name="btnGenerateQuote"
+                    FontSize="20"
+                    Clicked="btnGenerateQuote_Clicked"/>
+        </Grid>
+    </Grid>
 
 </ContentPage>

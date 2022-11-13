@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Perfect Pay", "Perfect Pay\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task App", "Task App\Task App.csproj", "{7E16CDD7-BA21-4886-8625-03AD14E50881}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code Quote", "Code Quote\Code Quote.csproj", "{8E01CDCC-25FB-4003-BDFE-89F8CFFC60CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,12 @@ Global
 		{7E16CDD7-BA21-4886-8625-03AD14E50881}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E16CDD7-BA21-4886-8625-03AD14E50881}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7E16CDD7-BA21-4886-8625-03AD14E50881}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8E01CDCC-25FB-4003-BDFE-89F8CFFC60CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E01CDCC-25FB-4003-BDFE-89F8CFFC60CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E01CDCC-25FB-4003-BDFE-89F8CFFC60CE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8E01CDCC-25FB-4003-BDFE-89F8CFFC60CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E01CDCC-25FB-4003-BDFE-89F8CFFC60CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E01CDCC-25FB-4003-BDFE-89F8CFFC60CE}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
